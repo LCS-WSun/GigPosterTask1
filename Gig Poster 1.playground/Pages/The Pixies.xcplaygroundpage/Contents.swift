@@ -33,15 +33,11 @@ let black = Color(hue: 0 , saturation: 100, brightness: 0, alpha: 100)
 
 // Begin your solution here...
 
-canvas.fillColor = limeGreen
-
-canvas.drawRectangle(at: Point(x: 0, y: 400), width: 400, height: 600)
-
 //Since I don't know how to make the background black, i'm gonna make another rectange
 
 canvas.fillColor = black
 
-canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 400)
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 415)
 
 
 //creating the circle stride function
@@ -55,9 +51,9 @@ canvas.drawShapesWithFill = true
 
 //ROW ONE
 
-for verticalPosition in stride(from: 3, through: 418, by: 41) {
+for verticalPosition in stride(from: -3, through: 418, by: 41) {
 
-for horizontalPosition in stride(from: -1, through: 412, by: 41) {
+for horizontalPosition in stride(from: -5, through: 412, by: 41) {
     
     // 17.5 = radius and the whole = 35
 // change the 40 to 40 - 35 = 5
@@ -87,14 +83,19 @@ canvas.drawEllipse(at: Point(x: horizontalPosition, y: verticalPosition), width:
 }
 }
 
+canvas.fillColor = limeGreen
+
+canvas.drawRectangle(at: Point(x: 0, y: 407), width: 400, height: 600)
+
 
 
 
 
 //Draw horizontal lines in grid
 
-for x in stride(from: 0, through: 400, by: 50) {
-    canvas.drawLine(from: Point(x: x, y: 0), to: Point(x: x, y: 600)) }
+//for x in stride(from: 0, through: 400, by: 50) {
+   // canvas.drawLine(from: Point(x: x, y: 0), to: Point(x: x, y: 600)) }
+
 
 
 
