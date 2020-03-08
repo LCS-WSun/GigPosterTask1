@@ -36,7 +36,7 @@ canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
 
 
-//creating the circle loop
+//creating the circle stride function 
 
 canvas.fillColor = offWhite
 
@@ -47,9 +47,9 @@ canvas.drawShapesWithFill = true
 
 //ROW ONE
 
-for verticalPositions in stride(from: 40, through: 400, by: 41) {
+for verticalPositions in stride(from: 3, through: 418, by: 41) {
 
-for horizontalPositions in stride(from: 36, through: 375, by: 41) {
+for horizontalPositions in stride(from: -1, through: 412, by: 41) {
 // 17.5 = radius and the whole = 35
 // change the 40 to 40 - 35 = 5
 // 375 + 17.5 = 410
@@ -71,9 +71,6 @@ canvas.drawEllipse(at: Point(x: horizontalPositions, y: verticalPositions), widt
 
 for x in stride(from: 0, through: 400, by: 50) {
     canvas.drawLine(from: Point(x: x, y: 0), to: Point(x: x, y: 600)) }
-
-
-
 
 
 
