@@ -130,11 +130,15 @@ canvas.drawRectangle(at: Point(x: 0, y: 404), width: 400, height: 600)
 
 
     //Pixies text
+canvas.textColor = black
+    
 canvas.drawText(message: "pixies", at: Point(x: 7, y: 415), size: 71, kerning: 0.0)
 
 
 
     //First rows of tiny text
+    canvas.textColor = black
+    
     canvas.drawText(message: "saturday", at: Point(x: 13, y: 550), size: 10, kerning: 0.0)
 
    canvas.drawText(message: "december 13 1986", at: Point(x: 13, y: 535), size: 10, kerning: 0.0)
@@ -144,6 +148,8 @@ canvas.drawText(message: "pixies", at: Point(x: 7, y: 415), size: 71, kerning: 0
 
 
     //Second rows of tiny text
+    canvas.textColor = black
+    
     canvas.drawText(message: "at the rat", at: Point(x: 279, y: 550), size: 10, kerning: 0.0)
 
    canvas.drawText(message: "528 commonwealth", at: Point(x: 279, y: 535), size: 10, kerning: 0.0)
@@ -152,15 +158,18 @@ canvas.drawText(message: "pixies", at: Point(x: 7, y: 415), size: 71, kerning: 0
 
 
 
+    
+    
+    
+    
     // White Text
-   canvas.drawText(message: "with", at: Point(x: 270, y: 430), size: 10, kerning: 0.0)
+   canvas.textColor = offWhite
+    
+   canvas.drawText(message: "with", at: Point(x: 279, y: 463), size: 13, kerning: 0.0)
 
-  // canvas.drawText(message: "throwing muses", at: Point(x: 270, y: 415), size: 10, kerning: 0.0)
+  canvas.drawText(message: "throwing muses", at: Point(x: 279, y: 448), size: 13, kerning: 0.0)
 
-    //canvas.drawText(message: "big dipper ", at: Point(x: 270, y: 400), size: 10, kerning: 0.0)
-    
-    
-    
+    canvas.drawText(message: "big dipper", at: Point(x: 279, y: 433), size: 13, kerning: 0.0)
     
     
     
