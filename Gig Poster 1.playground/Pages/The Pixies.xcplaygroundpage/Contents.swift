@@ -62,13 +62,34 @@ horizontalPosition
 
     //If statements of the circles to get the right color?
 
-     if verticalPosition == 75||verticalPositio  == 350 {
-     canvas.fillColor = limeGreen
-      }
-      else {
-    canvas.fillColor = offWhite
-     }
+    // if verticalPosition == 38||verticalPosition  == 366 //{
+    // canvas.fillColor = offWhite
+    //  }
+    //  else {
+   // canvas.fillColor = limeGreen
+        
+   // }
 
+    //A if statement for horizontal restrictions
+    
+   //if horizontalPosition == 36||horizontalPosition  == 364 {
+    //canvas.fillColor = offWhite
+   //  }
+   //  else {
+  // canvas.fillColor = limeGreen
+       
+  // }
+    
+    if verticalPosition > 36 {
+        canvas.fillColor = offWhite
+    }
+    
+    
+    
+    
+    
+    
+    
     
 //Invoking and actually creating the circles
 canvas.drawEllipse(at: Point(x: horizontalPosition, y: verticalPosition), width: 37, height: 37)
