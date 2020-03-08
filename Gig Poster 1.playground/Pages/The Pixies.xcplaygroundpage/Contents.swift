@@ -60,7 +60,8 @@ verticalPosition
 horizontalPosition
     
 
-    //If statements of the circles to get the right color?
+    //ATTEMPTS AT THE IF ELSE STATEMENT TO GET COLOR
+    //Very non efficent way and it shows
 
     // if verticalPosition == 38||verticalPosition  == 366 //{
     // canvas.fillColor = offWhite
@@ -80,21 +81,46 @@ horizontalPosition
        
   // }
     
-    if verticalPosition > 36 {
-        canvas.fillColor = offWhite
-    }
+    
+    //WHAT I WANT TO HAPPEN (9 vertical rows with if else statements) wonder if I can use a switch statement?
+    
+
+   // if verticalPosition < 38 && > 366
+  //  canvas.fillColor = offWhite
+   // }
+  //  else {
+   // canvas.fillColor = limeGreen
+   // }
+    
+    //Then you keep doing this for the rest 8 rows and so on
+    
+     // if verticalPosition < 38 && > 325
+     //  canvas.fillColor = offWhite
+      // }
+     //  else {
+      // canvas.fillColor = limeGreen
+      // }
+       
+    
+    
+
     
     
     
     
+
+    //WHAT IF I USED A SWITCH STATEMENT... (can you combine if with it?) (does not work)
     
+    //switch verticalPosition {
+   // case 1: 36
+    //canvas.fillColor = limeGreen
+   // {
+        
     
     
     
 //Invoking and actually creating the circles
 canvas.drawEllipse(at: Point(x: horizontalPosition, y: verticalPosition), width: 37, height: 37)
-
-}
 }
 
 //The top lime green rectangle
@@ -103,7 +129,8 @@ canvas.fillColor = limeGreen
 canvas.drawRectangle(at: Point(x: 0, y: 404), width: 400, height: 600)
 
 
-
+    //Pixies text
+canvas.drawText(message: "pixies", at: Point(x: 7, y: 415), size: 75, kerning: 0.0)
 
 
 
@@ -130,3 +157,4 @@ canvas.drawRectangle(at: Point(x: 0, y: 404), width: 400, height: 600)
  */
 PlaygroundPage.current.liveView = canvas
 
+}
