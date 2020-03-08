@@ -130,10 +130,41 @@ canvas.drawRectangle(at: Point(x: 0, y: 404), width: 400, height: 600)
 
 
     //Pixies text
-canvas.drawText(message: "pixies", at: Point(x: 7, y: 415), size: 75, kerning: 0.0)
+canvas.drawText(message: "pixies", at: Point(x: 7, y: 415), size: 71, kerning: 0.0)
 
 
 
+    //First row
+    canvas.drawText(message: "saturday", at: Point(x: 13, y: 550), size: 10, kerning: 0.0)
+
+   canvas.drawText(message: "december 13 1986", at: Point(x: 13, y: 535), size: 10, kerning: 0.0)
+
+   canvas.drawText(message: "9pm over 21", at: Point(x: 13, y: 520), size: 10, kerning: 0.0)
+
+
+
+    //Second row
+   // canvas.drawText(message: "at the rat ", at: Point(x: 150, y: 430), size: 10, kerning: 0.0)
+
+   // canvas.drawText(message: "528 commonwealth.", at: Point(x: 150, y: 415), size: 10, kerning: 0.0)
+
+   // canvas.drawText(message: "boston, mass.", at: Point(x: 150, y: 400), size: 10, kerning: 0.0)
+
+
+
+    // Third Row
+   // canvas.drawText(message: "with the tourists", at: Point(x: 270, y: 430), size: 10, kerning: 0.0)
+
+   // canvas.drawText(message: "multi death corporations", at: Point(x: 270, y: 415), size: 10, kerning: 0.0)
+
+    //canvas.drawText(message: "new regime & red scare ", at: Point(x: 270, y: 400), size: 10, kerning: 0.0)
+    
+    
+    
+    
+    
+    
+    
 
 
 
