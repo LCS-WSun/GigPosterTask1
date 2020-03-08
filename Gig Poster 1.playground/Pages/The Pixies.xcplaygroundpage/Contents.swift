@@ -47,24 +47,25 @@ canvas.drawShapesWithFill = true
 
 //ROW ONE
 
-for rowOneVer in stride(from: 50, through: 350, by: 41) {
+for verticalPositions in stride(from: 40, through: 400, by: 41) {
 
-for rowOneHor in stride(from: 36, through: 375, by: 41) {
+for horizontalPositions in stride(from: 36, through: 375, by: 41) {
 // 17.5 = radius and the whole = 35
 // change the 40 to 40 - 35 = 5
 // 375 + 17.5 = 410
 // 35 * 11 = 385
 // so the spacing is 40 so I add this to the 375 point, I also know that the width is 35 and the height is the same and should add the 40 to 17.5 which is half of 35 to get me 432
+//This is old logic that didn't work so ignore
     
+verticalPositions
+horizontalPositions
     
-    
-rowOneHor
-rowOneVer
-    
-canvas.drawEllipse(at: Point(x: rowOneHor, y: rowOneVer), width: 37, height: 37)
+canvas.drawEllipse(at: Point(x: horizontalPositions, y: verticalPositions), width: 37, height: 37)
 
 }
 }
+
+
 
 //Draw horizontal lines in grid
 
