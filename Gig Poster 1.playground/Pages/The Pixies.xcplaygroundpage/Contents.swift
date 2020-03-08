@@ -30,6 +30,49 @@ let limeGreen = Color(hue: 106, saturation: 64, brightness: 73, alpha: 100)
 
 // Begin your solution here...
 
+canvas.fillColor = limeGreen
+
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
+
+
+
+//creating the circle loop
+
+canvas.fillColor = offWhite
+
+canvas.drawShapesWithBorders = false
+
+canvas.drawShapesWithFill = true
+
+
+//ROW ONE
+
+for rowOne in stride(from: -2, through: 432, by: 38) {
+// 17.5 = radius and the whole = 35
+// change the 40 to 40 - 35 = 5
+// 375 + 17.5 = 410
+// 35 * 11 = 385
+// so the spacing is 40 so I add this to the 375 point, I also know that the width is 35 and the height is the same and should add the 40 to 17.5 which is half of 35 to get me 432
+    
+    
+    
+rowOne
+    
+canvas.drawEllipse(at: Point(x: rowOne, y: 50), width: 38, height: 38)
+
+}
+
+
+//Draw horizontal lines in grid
+
+for x in stride(from: 0, through: 400, by: 50) {
+    canvas.drawLine(from: Point(x: x, y: 0), to: Point(x: x, y: 600)) }
+
+
+
+
+
+
 
 /*:
  ## Use Source Control
