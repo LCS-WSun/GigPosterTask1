@@ -47,7 +47,7 @@ canvas.drawShapesWithFill = true
 
 //ROW ONE
 
-for rowOne in stride(from: -2, through: 432, by: 38) {
+for rowOne in stride(from: 35, through: 375, by: 41) {
 // 17.5 = radius and the whole = 35
 // change the 40 to 40 - 35 = 5
 // 375 + 17.5 = 410
@@ -58,7 +58,7 @@ for rowOne in stride(from: -2, through: 432, by: 38) {
     
 rowOne
     
-canvas.drawEllipse(at: Point(x: rowOne, y: 50), width: 38, height: 38)
+canvas.drawEllipse(at: Point(x: rowOne, y: 50), width: 37, height: 37)
 
 }
 
