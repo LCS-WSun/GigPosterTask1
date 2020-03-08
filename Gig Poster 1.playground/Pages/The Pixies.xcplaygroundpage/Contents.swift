@@ -33,59 +33,58 @@ let black = Color(hue: 0 , saturation: 100, brightness: 0, alpha: 100)
 
 // Begin your solution here...
 
-//Since I don't know how to make the background black, i'm gonna make another rectange
+
+//Since I don't know how to make the background black, i'm gonna make another rectangle and I make this first because of sequence
 
 canvas.fillColor = black
 
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 415)
 
 
-//creating the circle stride function
-
-canvas.fillColor = offWhite
+//The default color of the circle will be green for now
+canvas.fillColor = limeGreen
 
 canvas.drawShapesWithBorders = false
 
 canvas.drawShapesWithFill = true
 
 
-//ROW ONE
+// Stride function of the circles
 
 for verticalPosition in stride(from: -3, through: 418, by: 41) {
 
 for horizontalPosition in stride(from: -5, through: 412, by: 41) {
-    
-    // 17.5 = radius and the whole = 35
-// change the 40 to 40 - 35 = 5
-// 375 + 17.5 = 410
-// 35 * 11 = 385
-// so the spacing is 40 so I add this to the 375 point, I also know that the width is 35 and the height is the same and should add the 40 to 17.5 which is half of 35 to get me 432
-//This is old logic that didn't work so ignore
+
     
 verticalPosition
 horizontalPosition
     
-    //If statement for the backdrop
-    //  if verticalPosition == 0 || verticalPosition == 400
-     // {
-    // canvas.fillColor = black
-    //  }
-    //  else {
-       //   canvas.fillColor = limeGreen
-   //   }
+
+    //If statements of the circles to get the right color?
+
+     if verticalPosition == 75||verticalPositio  == 350 {
+     canvas.fillColor = limeGreen
+      }
+      else {
+    canvas.fillColor = offWhite
+     }
+
     
-    
-    
-    
-    
+//Invoking and actually creating the circles
 canvas.drawEllipse(at: Point(x: horizontalPosition, y: verticalPosition), width: 37, height: 37)
 
 }
 }
 
+//The top lime green rectangle
 canvas.fillColor = limeGreen
 
-canvas.drawRectangle(at: Point(x: 0, y: 407), width: 400, height: 600)
+canvas.drawRectangle(at: Point(x: 0, y: 404), width: 400, height: 600)
+
+
+
+
+
 
 
 
